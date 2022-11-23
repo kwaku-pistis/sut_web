@@ -1,7 +1,8 @@
 <template>
   <div>
+    <!-- Pistis -->
     <el-skeleton style="width: 100%" :loading="loading" animated>
-      <template slot="template">
+      <template #template>
         <div style="padding: 14px">
           <el-skeleton-item variant="h3" style="width: 50%" />
           <div class="school_skeleton">
@@ -14,19 +15,19 @@
           </div>
         </div>
       </template>
-      <template>
+      <template #default>
         <el-menu default-active="1" class="el-menu-vertical-demo">
           <el-sub-menu
             v-for="(school, index) in schoolRegions"
             :key="index"
             :index="toString(index++)"
           >
-            <template slot="title">
-              <span>{{ school.district.region.name }}</span>
+            <template v-slot:title>
+              {{ school.district.region.name }}
             </template>
             <el-menu-item-group title="District">
-              <el-sub-menu :index="toString(0)">
-                <template slot="title">{{ school.district.name }}</template>
+              <el-sub-menu :index="toString(index)">
+                <template v-slot:title>{{ school.district.name }}</template>
                 <el-menu-item @click="setLocalStorage(school)">
                   » {{ school.name }}</el-menu-item
                 >
@@ -58,8 +59,8 @@ export default {
       schoolsApi
         .getSchoolsList()
         .then(response => {
-          console.log('School List', response)
           this.schoolRegions = response;
+          console.log('School List', this.schoolRegions)
           this.loading = false;
         })
         .catch(error => console.log(error));

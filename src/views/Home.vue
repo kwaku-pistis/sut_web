@@ -122,7 +122,7 @@
                 <h1>Active Schools</h1>
               </div>
 
-              <schools-list />
+              <SchoolsList/>
             </div>
           </el-col>
         </el-row>
