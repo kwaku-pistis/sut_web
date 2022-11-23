@@ -1,0 +1,291 @@
+
+/* @import url('https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,700i,900|Poppins:400,400i,500,500i,600,600i,700,700i,800,800i,900&display=swap'); */
+
+/* body {
+  font-family: 'Poppins', sans-serif;
+} */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+body {
+ font-family: Avenir,
+ Helvetica,
+ Arial,
+ sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 0.9rem;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+.full_width {
+  width: 100%;
+}
+.d-flex {
+  display: flex;
+}
+.d-block {
+  display: block;
+}
+/* sorry for the same name below */
+/* i didnt want to change it , it was too late. */
+.d-flex-algn-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.d-flex-align-center {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.d-flex-justify-between {
+  display: flex;
+  justify-content: space-between;
+}
+.d-flex-center-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.d-flex-center-evenly {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.d-flex-column-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.valco {
+  height: 130px;
+}
+.donate_btn {
+  box-shadow: 0 0 16px 0 rgb(31 36 43 / 8%),
+  0 8px 16px 0 rgb(31 36 43 / 16%);
+}
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+.mt--15 {
+  margin-top: -15px;
+}
+.mt-15 {
+  margin-top: 15px;
+}
+.mt-25 {
+  margin-top: 25px;
+}
+.mt-20 {
+  margin-top: 20px;
+}
+.mt-10 {
+  margin-top: 10px;
+}
+.pt-15 {
+  padding-top: 15px;
+}
+.mr-5 {
+  margin-right: 5px;
+}
+.mr-10 {
+  margin-right: 10px;
+}
+.p-10 {
+  padding: 10px;
+}
+.ml-5 {
+  margin-left: 6px;
+}
+.page_wrap {
+  width: 92%;
+  height: auto;
+  margin-right: auto;
+  margin-left: auto;
+  background-color: transparent;
+}
+.page_wrap_others {
+  width: 85%;
+  height: auto;
+  margin-right: auto;
+  margin-left: auto;
+  border-radius: 5px;
+}
+.page_margin {
+  margin: 5px 25px;
+}
+.w-30 {
+  width: 20%
+}
+.mx-40 {
+  margin-left: 40px;
+  margin-right: 40px;
+}
+.mt-30 {
+  margin-top: 30px;
+}
+.py-40 {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.py-10 {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.px-15 {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.p_txt {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 22px;
+}
+.head_txt {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 29px;
+}
+.color_primary {
+  color: #2C89DF;
+}
+.color_dark {
+  color: #2D3748;
+}
+.color_white {
+  color: #FFFFFF;
+}
+.caps {
+  text-transform: uppercase;
+}
+.slide_responsive {
+  width: 100%;
+  height: 400px;
+   object-fit: contain;
+}
+.home_slide .el-carousel__container {
+  height: 550px !important;
+}
+.models_slide .el-carousel__container {
+  height: 400px !important;
+}
+.school_slide .el-carousel__container {
+ height: 500px !important;
+}
+
+.i_icon {
+  color: #2C89DF;
+  font-size: 18px;
+}
+footer {
+  background-color: #2D3748;
+  width: 100%;
+  height: auto;
+  padding: 20px 5px;
+}
+.text-center {
+  text-align: center;
+}
+.bg-grey {
+  background-color: #F9FAFB;
+}
+.bg-white {
+  background-color: white;
+}
+.bg-page {
+  background: #E6E7EB;
+}
+.image_float {
+  width:400px;
+  height: 250px;
+  margin-right:15px;
+  margin-bottom: 8px;
+  float: left;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.active-link {
+  color: rgb(172, 172, 206);
+}
+.radius-5 {
+  border-radius: 5px;
+}
+._details_head {
+  background: #2c89df;
+  color: white;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  padding: 12px 2px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+.el-form-item__label {
+  line-height: 20px !important;
+}
+.school_skeleton {
+   display: flex;
+   align-items: center;
+   justify-items: space-between;
+   margin-top: 16px;
+   height: 16px;
+}
+img.header_image_ret {
+ width: 100%;
+ max-width: 280px;
+ height: auto;
+}
+
+img.header_image_rel {
+  width: 100%;
+  height: auto;
+}
+
+img.header_image_val {
+  width: 100%;
+  height: auto;
+  margin-left:20px;
+}
+
+img.header_image_moe {
+  width: 100%;
+  height: auto;
+    margin-left:30px;
+}
+
+img.header_image_ern {
+  width: 100%;
+  height: auto;
+    margin-left:20px;
+}
+
+img.header_image_ges {
+  width: 40%;
+  height: auto;
+  margin-left:12px;
+}
+.w-20 {
+  width: 30%;
+}
+.portal_div {
+  width: 500px;
+}
+.float-right {
+  float: right;
+}
