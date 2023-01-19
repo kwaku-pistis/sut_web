@@ -122,7 +122,7 @@
             mt-10
           "
         >
-          <h3>Designed by <strong><a href="">Apex & Over LTD</a></strong>.</h3>
+          <h3>Designed by <strong><a href="https://znap.link/apexandover" target="new">Apex & Over LTD</a></strong>.</h3>
         </div>
       </el-col>
     </el-row>
